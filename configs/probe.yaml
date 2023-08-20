@@ -1,0 +1,35 @@
+runmode: dev
+
+dev:
+  mongodb:
+    host: 127.0.0.1
+    port: 27017
+    database: cluster-watcher
+
+  log:
+    disable-caller: false # 是否开启 caller，如果开启会在日志中显示调用日志所在的文件和行号
+    disable-stacktrace: false # 是否禁止在 panic 及以上级别打印堆栈信息
+    level: debug # 指定日志级别，可选值：debug, info, warn, error, dpanic, panic, fatal
+    format: console # 指定日志显示格式，可选值：console, json
+    output-paths: [ /tmp/cluster-watcher.log, stdout ] # 指定日志输出位置，多个输出，用 `逗号 + 空格` 分开。stdout：标准输出，
+
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    user: guest
+    password: guest
+
+task:
+  host:
+    name: host
+    url: http://127.0.0.1:4040/api/topology/hosts
+    channel-name: host
+  pod:
+    name: pod
+    url: http://127.0.0.1:4040/api/topology/pods
+    channel-name: pod
+  container:
+    name: container
+    url: http://127.0.0.1:4040/api/topology/containers
+    channel-name: container
