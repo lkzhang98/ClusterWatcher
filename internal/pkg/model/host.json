@@ -1,0 +1,228 @@
+[
+  {
+    "_id": {"$oid": "64e0bc03fd5cfe6fa4c47d53"},
+    "nodes": {
+      "worknode1;<host>": {
+        "id": "worknode1;<host>",
+        "label": "worknode1",
+        "labelminor": "",
+        "rank": "",
+        "shape": "circle",
+        "tag": "",
+        "stack": false,
+        "pseudo": false,
+        "metadata": [
+          {
+            "id": "kernel_version",
+            "label": "Kernel version",
+            "value": "5.4.0-153-generic #170-Ubuntu SMP Fri Jun 16 13:43:31 UTC 2023",
+            "priority": 1,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "uptime",
+            "label": "Uptime",
+            "value": "13967",
+            "priority": 2,
+            "datatype": "duration",
+            "truncate": 0
+          },
+          {
+            "id": "host_name",
+            "label": "Hostname",
+            "value": "worknode1",
+            "priority": 11,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "os",
+            "label": "OS",
+            "value": "linux",
+            "priority": 12,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "local_networks",
+            "label": "Local networks",
+            "value": "10.244.1.0/32, 10.244.1.1/24, 127.0.0.1/8, 172.17.0.1/16, 192.168.1.103/24, 192.168.1.150/24",
+            "priority": 13,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "host_scope_version",
+            "label": "Scope version",
+            "value": "1.13.2",
+            "priority": 14,
+            "datatype": "",
+            "truncate": 0
+          }
+        ],
+        "parents": null,
+        "metrics": [
+          {
+            "id": "host_cpu_usage_percent",
+            "label": "CPU",
+            "format": "percent",
+            "group": "",
+            "value": 2.77,
+            "valueempty": false,
+            "priority": 1,
+            "url": "",
+            "metric": {
+              "samples": null,
+              "min": 1.0101010101010102,
+              "max": 100
+            }
+          },
+          {
+            "id": "host_mem_usage_bytes",
+            "label": "Memory",
+            "format": "filesize",
+            "group": "",
+            "value": 935657472,
+            "valueempty": false,
+            "priority": 2,
+            "url": "",
+            "metric": {
+              "samples": null,
+              "min": 934891520,
+              "max": 4109688832
+            }
+          },
+          {
+            "id": "load1",
+            "label": "Load (1m)",
+            "format": "",
+            "group": "load",
+            "value": 0.21,
+            "valueempty": false,
+            "priority": 11,
+            "url": "",
+            "metric": {
+              "samples": null,
+              "min": 0.21,
+              "max": 0.25
+            }
+          }
+        ],
+        "tables": null,
+        "adjacency": ["hp-pavilion;<host>", "worknode1;<host>"]
+      },
+      "hp-pavilion;<host>": {
+        "id": "hp-pavilion;<host>",
+        "label": "hp-pavilion",
+        "labelminor": "",
+        "rank": "",
+        "shape": "circle",
+        "tag": "",
+        "stack": false,
+        "pseudo": false,
+        "metadata": [
+          {
+            "id": "kernel_version",
+            "label": "Kernel version",
+            "value": "5.15.0-67-generic #74~20.04.1-Ubuntu SMP Wed Feb 22 14:52:34 UTC 2023",
+            "priority": 1,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "uptime",
+            "label": "Uptime",
+            "value": "26696",
+            "priority": 2,
+            "datatype": "duration",
+            "truncate": 0
+          },
+          {
+            "id": "host_name",
+            "label": "Hostname",
+            "value": "hp-pavilion",
+            "priority": 11,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "os",
+            "label": "OS",
+            "value": "linux",
+            "priority": 12,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "local_networks",
+            "label": "Local networks",
+            "value": "10.244.0.0/32, 10.244.0.1/24, 127.0.0.1/8, 172.17.0.1/16, 172.18.0.1/16, 192.168.1.104/24",
+            "priority": 13,
+            "datatype": "",
+            "truncate": 0
+          },
+          {
+            "id": "host_scope_version",
+            "label": "Scope version",
+            "value": "1.13.2",
+            "priority": 14,
+            "datatype": "",
+            "truncate": 0
+          }
+        ],
+        "parents": null,
+        "metrics": [
+          {
+            "id": "host_cpu_usage_percent",
+            "label": "CPU",
+            "format": "percent",
+            "group": "",
+            "value": 8.59,
+            "valueempty": false,
+            "priority": 1,
+            "url": "",
+            "metric": {
+              "samples": null,
+              "min": 2.4777636594663277,
+              "max": 100
+            }
+          },
+          {
+            "id": "host_mem_usage_bytes",
+            "label": "Memory",
+            "format": "filesize",
+            "group": "",
+            "value": 14368116736,
+            "valueempty": false,
+            "priority": 2,
+            "url": "",
+            "metric": {
+              "samples": null,
+              "min": 14353334272,
+              "max": 16475377664
+            }
+          },
+          {
+            "id": "load1",
+            "label": "Load (1m)",
+            "format": "",
+            "group": "load",
+            "value": 2.56,
+            "valueempty": false,
+            "priority": 11,
+            "url": "",
+            "metric": {
+              "samples": null,
+              "min": 2.56,
+              "max": 2.93
+            }
+          }
+        ],
+        "tables": null,
+        "adjacency": ["hp-pavilion;<host>", "worknode1;<host>"]
+      }
+    },
+    "timestamp": {"$date": "2023-08-19T12:56:35.000Z"}
+  }
+]

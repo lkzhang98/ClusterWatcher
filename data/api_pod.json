@@ -1,0 +1,1863 @@
+{
+  "records": {
+    "d27e7f72-8d86-45af-9d02-ba78135b9cd2;\u003cpod\u003e": {
+      "adjacency": [
+        "c0395169-9846-405c-a5a7-c347794de957;\u003cpod\u003e"
+      ],
+      "id": "d27e7f72-8d86-45af-9d02-ba78135b9cd2;\u003cpod\u003e",
+      "label": "weave-scope-agent-6n64z",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.150"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "weave"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-27T16:19:57Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "7"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.2744054522613065,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.32
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 4.109688832E+09,
+          "min": 6.7567616E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 6.7858432E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "5aa10503-75ae-4536-82b1-97b7aaf98b9e;\u003cdeployment\u003e",
+          "label": "weave-scope-app",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "8eb2c240-f65c-4139-82f4-93d7ce9b8da4;\u003cdaemonset\u003e",
+          "label": "weave-scope-agent",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "worknode1;\u003chost\u003e",
+          "label": "worknode1",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "weave/weave-scope-agent-6n64z",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "weave-scope",
+                "label": "app"
+              },
+              "id": "label_app"
+            },
+            {
+              "entries": {
+                "label": "controller-revision-hash",
+                "value": "5664f87cc8"
+              },
+              "id": "label_controller-revision-hash"
+            },
+            {
+              "entries": {
+                "label": "name",
+                "value": "weave-scope-agent"
+              },
+              "id": "label_name"
+            },
+            {
+              "entries": {
+                "value": "1",
+                "label": "pod-template-generation"
+              },
+              "id": "label_pod-template-generation"
+            },
+            {
+              "entries": {
+                "value": "scope",
+                "label": "weave-cloud-component"
+              },
+              "id": "label_weave-cloud-component"
+            },
+            {
+              "entries": {
+                "value": "agent",
+                "label": "weave-scope-component"
+              },
+              "id": "label_weave-scope-component"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "e1748f4d-c227-41a5-b228-f51858fdde81;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e",
+        "a686d989-d545-41e0-acaa-32795d4e3363;\u003cpod\u003e"
+      ],
+      "id": "e1748f4d-c227-41a5-b228-f51858fdde81;\u003cpod\u003e",
+      "label": "coredns-65c54cc984-svrv2",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "10.244.0.22"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:45:59Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "10"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.0028760957642725597,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.0
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.7825792E+08,
+          "min": 1.4618624E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 1.5003648E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "9eb94b25-5f27-4b07-aaaf-81f69c554e65;\u003cdeployment\u003e",
+          "label": "coredns",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "c19bb3b1-68d4-4825-9602-2428b678afdc;\u003cservice\u003e",
+          "label": "kube-dns",
+          "topologyId": "services"
+        },
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/coredns-65c54cc984-svrv2",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "label": "k8s-app",
+                "value": "kube-dns"
+              },
+              "id": "label_k8s-app"
+            },
+            {
+              "entries": {
+                "value": "65c54cc984",
+                "label": "pod-template-hash"
+              },
+              "id": "label_pod-template-hash"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "a686d989-d545-41e0-acaa-32795d4e3363;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e",
+        "a686d989-d545-41e0-acaa-32795d4e3363;\u003cpod\u003e"
+      ],
+      "id": "a686d989-d545-41e0-acaa-32795d4e3363;\u003cpod\u003e",
+      "label": "coredns-65c54cc984-kfbfc",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "10.244.0.23"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:45:59Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "10"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.003555515302935665,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.0
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.7825792E+08,
+          "min": 1.4917632E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 1.4917632E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "9eb94b25-5f27-4b07-aaaf-81f69c554e65;\u003cdeployment\u003e",
+          "label": "coredns",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "c19bb3b1-68d4-4825-9602-2428b678afdc;\u003cservice\u003e",
+          "label": "kube-dns",
+          "topologyId": "services"
+        },
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/coredns-65c54cc984-kfbfc",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "kube-dns",
+                "label": "k8s-app"
+              },
+              "id": "label_k8s-app"
+            },
+            {
+              "entries": {
+                "value": "65c54cc984",
+                "label": "pod-template-hash"
+              },
+              "id": "label_pod-template-hash"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "97465bbba80031eb9d021b31d0ed08f4;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e"
+      ],
+      "id": "97465bbba80031eb9d021b31d0ed08f4;\u003cpod\u003e",
+      "label": "kube-controller-manager-hp-pavilion",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.104"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:45:45Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "15"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.05155845018450185,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.05
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.6475377664E+10,
+          "min": 5.302272E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 5.3026816E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/kube-controller-manager-hp-pavilion",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "label": "component",
+                "value": "kube-controller-manager"
+              },
+              "id": "label_component"
+            },
+            {
+              "entries": {
+                "label": "tier",
+                "value": "control-plane"
+              },
+              "id": "label_tier"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "3a9f1306-0ec9-4729-9df8-c051f72de73d;\u003cpersistent_volume_claim\u003e": {
+      "adjacency": [
+        "cbb9698d-e577-4c1d-aa21-82100b11b591;\u003cpersistent_volume\u003e"
+      ],
+      "id": "3a9f1306-0ec9-4729-9df8-c051f72de73d;\u003cpersistent_volume_claim\u003e",
+      "label": "mongo-pv-claim",
+      "labelMinor": "",
+      "metadata": [
+        {
+          "id": "kubernetes_node_type",
+          "label": "Type",
+          "priority": 1.0,
+          "value": "Persistent Volume Claim"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 2.0,
+          "value": "default"
+        },
+        {
+          "id": "kubernetes_status",
+          "label": "Status",
+          "priority": 3.0,
+          "value": "Bound"
+        },
+        {
+          "id": "kubernetes_volume_name",
+          "label": "Volume",
+          "priority": 4.0,
+          "value": "mongo-pv-storage"
+        },
+        {
+          "id": "kubernetes_storage_class_name",
+          "label": "Storage class",
+          "priority": 5.0,
+          "value": "mongo"
+        },
+        {
+          "id": "kubernetes_volume_capacity",
+          "label": "Capacity",
+          "priority": 6.0,
+          "value": "500Mi"
+        }
+      ],
+      "rank": "default/mongo-pv-claim",
+      "shape": "dottedcylinder",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [],
+          "type": "property-list"
+        }
+      ]
+    },
+    "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e",
+        "d9ec60e95c2c82464a1bd39e025ce609;\u003cpod\u003e",
+        "pseudo:unmanaged:worknode1"
+      ],
+      "id": "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e",
+      "label": "kube-apiserver-hp-pavilion",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.104"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:45:44Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "31"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.11577215384615384,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.11
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.6475377664E+10,
+          "min": 2.3805952E+08,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 2.3805952E+08
+        }
+      ],
+      "parents": [
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/kube-apiserver-hp-pavilion",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "kube-apiserver",
+                "label": "component"
+              },
+              "id": "label_component"
+            },
+            {
+              "entries": {
+                "value": "control-plane",
+                "label": "tier"
+              },
+              "id": "label_tier"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "af1a69ee-9839-4bb7-881d-dea9a8a79d5a;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e"
+      ],
+      "id": "af1a69ee-9839-4bb7-881d-dea9a8a79d5a;\u003cpod\u003e",
+      "label": "kube-proxy-6drgt",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.150"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:46:22Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "12"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.0,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.0
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 4.109688832E+09,
+          "min": 1.3463552E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 1.3463552E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "10b403b8-a710-4711-b353-af4cc3c30254;\u003cdaemonset\u003e",
+          "label": "kube-proxy",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "worknode1;\u003chost\u003e",
+          "label": "worknode1",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/kube-proxy-6drgt",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "6467d69b44",
+                "label": "controller-revision-hash"
+              },
+              "id": "label_controller-revision-hash"
+            },
+            {
+              "entries": {
+                "value": "kube-proxy",
+                "label": "k8s-app"
+              },
+              "id": "label_k8s-app"
+            },
+            {
+              "entries": {
+                "label": "pod-template-generation",
+                "value": "1"
+              },
+              "id": "label_pod-template-generation"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "eafcdec3503affd171afe16fb6d66897;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e"
+      ],
+      "id": "eafcdec3503affd171afe16fb6d66897;\u003cpod\u003e",
+      "label": "kube-scheduler-hp-pavilion",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.104"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:45:46Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "15"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.008565950881612092,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.01
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.6475377664E+10,
+          "min": 2.0897792E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 2.0897792E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/kube-scheduler-hp-pavilion",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "kube-scheduler",
+                "label": "component"
+              },
+              "id": "label_component"
+            },
+            {
+              "entries": {
+                "label": "tier",
+                "value": "control-plane"
+              },
+              "id": "label_tier"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "pseudo:unmanaged:hp-pavilion": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e",
+        "pseudo:unmanaged:hp-pavilion"
+      ],
+      "id": "pseudo:unmanaged:hp-pavilion",
+      "label": "Unmanaged",
+      "labelMinor": "hp-pavilion",
+      "pseudo": true,
+      "rank": "unmanaged:hp-pavilion",
+      "shape": "square",
+      "stack": true
+    },
+    "99577ed8-bc73-4a2e-a8e6-4a0be0b60926;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e"
+      ],
+      "id": "99577ed8-bc73-4a2e-a8e6-4a0be0b60926;\u003cpod\u003e",
+      "label": "kube-proxy-4hmc5",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.104"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:45:59Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "10"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.0,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.0
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.6475377664E+10,
+          "min": 1.2353536E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 1.2353536E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "10b403b8-a710-4711-b353-af4cc3c30254;\u003cdaemonset\u003e",
+          "label": "kube-proxy",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/kube-proxy-4hmc5",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "6467d69b44",
+                "label": "controller-revision-hash"
+              },
+              "id": "label_controller-revision-hash"
+            },
+            {
+              "entries": {
+                "label": "k8s-app",
+                "value": "kube-proxy"
+              },
+              "id": "label_k8s-app"
+            },
+            {
+              "entries": {
+                "label": "pod-template-generation",
+                "value": "1"
+              },
+              "id": "label_pod-template-generation"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "6ff7cd97-4c9d-4b9a-8e75-5f59ad054737;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e",
+        "c0395169-9846-405c-a5a7-c347794de957;\u003cpod\u003e"
+      ],
+      "id": "6ff7cd97-4c9d-4b9a-8e75-5f59ad054737;\u003cpod\u003e",
+      "label": "weave-scope-cluster-agent-bfd54bd98-j7wmz",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "10.244.1.14"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "weave"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-08-12T13:17:06Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "0"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.011808304668304669,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.03
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 4.109688832E+09,
+          "min": 5.3252096E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 5.3252096E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "0312f3f2-23e4-48fb-be91-73a71c505e0e;\u003cdeployment\u003e",
+          "label": "weave-scope-cluster-agent",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "5aa10503-75ae-4536-82b1-97b7aaf98b9e;\u003cdeployment\u003e",
+          "label": "weave-scope-app",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "8eb2c240-f65c-4139-82f4-93d7ce9b8da4;\u003cdaemonset\u003e",
+          "label": "weave-scope-agent",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "worknode1;\u003chost\u003e",
+          "label": "worknode1",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "weave/weave-scope-cluster-agent-bfd54bd98-j7wmz",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "label": "app",
+                "value": "weave-scope"
+              },
+              "id": "label_app"
+            },
+            {
+              "entries": {
+                "label": "name",
+                "value": "weave-scope-cluster-agent"
+              },
+              "id": "label_name"
+            },
+            {
+              "entries": {
+                "value": "bfd54bd98",
+                "label": "pod-template-hash"
+              },
+              "id": "label_pod-template-hash"
+            },
+            {
+              "entries": {
+                "label": "weave-cloud-component",
+                "value": "scope"
+              },
+              "id": "label_weave-cloud-component"
+            },
+            {
+              "entries": {
+                "value": "cluster-agent",
+                "label": "weave-scope-component"
+              },
+              "id": "label_weave-scope-component"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "cbb9698d-e577-4c1d-aa21-82100b11b591;\u003cpersistent_volume\u003e": {
+      "id": "cbb9698d-e577-4c1d-aa21-82100b11b591;\u003cpersistent_volume\u003e",
+      "label": "mongo-pv-storage",
+      "labelMinor": "",
+      "metadata": [
+        {
+          "id": "kubernetes_node_type",
+          "label": "Type",
+          "priority": 1.0,
+          "value": "Persistent Volume"
+        },
+        {
+          "id": "kubernetes_volume_claim",
+          "label": "Volume claim",
+          "priority": 2.0,
+          "value": "mongo-pv-claim"
+        },
+        {
+          "id": "kubernetes_storage_class_name",
+          "label": "Storage class",
+          "priority": 3.0,
+          "value": "mongo"
+        },
+        {
+          "id": "kubernetes_access_modes",
+          "label": "Access modes",
+          "priority": 5.0,
+          "value": "ReadWriteOnce"
+        },
+        {
+          "id": "kubernetes_status",
+          "label": "Status",
+          "priority": 6.0,
+          "value": "Bound"
+        },
+        {
+          "id": "kubernetes_storage_driver",
+          "label": "Storage driver",
+          "priority": 7.0,
+          "value": "HostPath"
+        }
+      ],
+      "rank": "/mongo-pv-storage",
+      "shape": "cylinder",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "local",
+                "label": "type"
+              },
+              "id": "label_type"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "c0395169-9846-405c-a5a7-c347794de957;\u003cpod\u003e": {
+      "id": "c0395169-9846-405c-a5a7-c347794de957;\u003cpod\u003e",
+      "label": "weave-scope-app-65c44b8c5c-4d852",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "10.244.1.15"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "weave"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-08-12T13:17:06Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "0"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.0025346882793017456,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 1.5
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 4.109688832E+09,
+          "min": 2.30903808E+08,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 2.30903808E+08
+        }
+      ],
+      "parents": [
+        {
+          "id": "5aa10503-75ae-4536-82b1-97b7aaf98b9e;\u003cdeployment\u003e",
+          "label": "weave-scope-app",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "8eb2c240-f65c-4139-82f4-93d7ce9b8da4;\u003cdaemonset\u003e",
+          "label": "weave-scope-agent",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "b0611994-9bab-4d24-8204-e87a2ac57d5d;\u003cservice\u003e",
+          "label": "weave-scope-app",
+          "topologyId": "services"
+        },
+        {
+          "id": "worknode1;\u003chost\u003e",
+          "label": "worknode1",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "weave/weave-scope-app-65c44b8c5c-4d852",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "label": "app",
+                "value": "weave-scope"
+              },
+              "id": "label_app"
+            },
+            {
+              "entries": {
+                "value": "weave-scope-app",
+                "label": "name"
+              },
+              "id": "label_name"
+            },
+            {
+              "entries": {
+                "label": "pod-template-hash",
+                "value": "65c44b8c5c"
+              },
+              "id": "label_pod-template-hash"
+            },
+            {
+              "entries": {
+                "value": "scope",
+                "label": "weave-cloud-component"
+              },
+              "id": "label_weave-cloud-component"
+            },
+            {
+              "entries": {
+                "value": "app",
+                "label": "weave-scope-component"
+              },
+              "id": "label_weave-scope-component"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "d9ec60e95c2c82464a1bd39e025ce609;\u003cpod\u003e": {
+      "adjacency": [
+        "d9ec60e95c2c82464a1bd39e025ce609;\u003cpod\u003e"
+      ],
+      "id": "d9ec60e95c2c82464a1bd39e025ce609;\u003cpod\u003e",
+      "label": "etcd-hp-pavilion",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.104"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-system"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:45:45Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "33"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.04326032,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.04
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.6475377664E+10,
+          "min": 4.2389504E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 4.2389504E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-system/etcd-hp-pavilion",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "etcd",
+                "label": "component"
+              },
+              "id": "label_component"
+            },
+            {
+              "entries": {
+                "label": "tier",
+                "value": "control-plane"
+              },
+              "id": "label_tier"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "00026053-2158-4438-9378-4fe50e6189b1;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e"
+      ],
+      "id": "00026053-2158-4438-9378-4fe50e6189b1;\u003cpod\u003e",
+      "label": "kube-flannel-ds-8rfl5",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.150"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-flannel"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:48:35Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "43"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.0,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.37
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 4.109688832E+09,
+          "min": 1.5179776E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 1.5179776E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "b9a4db24-8743-4ab9-a811-769cac3b5e73;\u003cdaemonset\u003e",
+          "label": "kube-flannel-ds",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "worknode1;\u003chost\u003e",
+          "label": "worknode1",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-flannel/kube-flannel-ds-8rfl5",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "label": "app",
+                "value": "flannel"
+              },
+              "id": "label_app"
+            },
+            {
+              "entries": {
+                "label": "controller-revision-hash",
+                "value": "67cb8b5bcc"
+              },
+              "id": "label_controller-revision-hash"
+            },
+            {
+              "entries": {
+                "label": "pod-template-generation",
+                "value": "1"
+              },
+              "id": "label_pod-template-generation"
+            },
+            {
+              "entries": {
+                "value": "node",
+                "label": "tier"
+              },
+              "id": "label_tier"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "9f6b0c19-9e75-4ccd-affb-6ccd937d3434;\u003cpod\u003e": {
+      "id": "9f6b0c19-9e75-4ccd-affb-6ccd937d3434;\u003cpod\u003e",
+      "label": "weave-scope-agent-bvjzx",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.104"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "weave"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-27T16:19:57Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "8"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.16991923125,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.21
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.6475377664E+10,
+          "min": 8.22272E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 8.5594112E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "5aa10503-75ae-4536-82b1-97b7aaf98b9e;\u003cdeployment\u003e",
+          "label": "weave-scope-app",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "8eb2c240-f65c-4139-82f4-93d7ce9b8da4;\u003cdaemonset\u003e",
+          "label": "weave-scope-agent",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "weave/weave-scope-agent-bvjzx",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "value": "weave-scope",
+                "label": "app"
+              },
+              "id": "label_app"
+            },
+            {
+              "entries": {
+                "label": "controller-revision-hash",
+                "value": "5664f87cc8"
+              },
+              "id": "label_controller-revision-hash"
+            },
+            {
+              "entries": {
+                "label": "name",
+                "value": "weave-scope-agent"
+              },
+              "id": "label_name"
+            },
+            {
+              "entries": {
+                "value": "1",
+                "label": "pod-template-generation"
+              },
+              "id": "label_pod-template-generation"
+            },
+            {
+              "entries": {
+                "value": "scope",
+                "label": "weave-cloud-component"
+              },
+              "id": "label_weave-cloud-component"
+            },
+            {
+              "entries": {
+                "label": "weave-scope-component",
+                "value": "agent"
+              },
+              "id": "label_weave-scope-component"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "22e112b0-48a1-47f5-978d-c49dc963582d;\u003cpod\u003e": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e"
+      ],
+      "id": "22e112b0-48a1-47f5-978d-c49dc963582d;\u003cpod\u003e",
+      "label": "kube-flannel-ds-jbzql",
+      "labelMinor": "1 container",
+      "metadata": [
+        {
+          "id": "kubernetes_state",
+          "label": "State",
+          "priority": 2.0,
+          "value": "Running"
+        },
+        {
+          "dataType": "ip",
+          "id": "kubernetes_ip",
+          "label": "IP",
+          "priority": 3.0,
+          "value": "192.168.1.104"
+        },
+        {
+          "dataType": "number",
+          "id": "container",
+          "label": "# Containers",
+          "priority": 4.0,
+          "value": "1"
+        },
+        {
+          "id": "kubernetes_namespace",
+          "label": "Namespace",
+          "priority": 5.0,
+          "value": "kube-flannel"
+        },
+        {
+          "dataType": "datetime",
+          "id": "kubernetes_created",
+          "label": "Created",
+          "priority": 6.0,
+          "value": "2023-07-24T14:48:35Z"
+        },
+        {
+          "id": "kubernetes_restart_count",
+          "label": "Restart #",
+          "priority": 7.0,
+          "value": "11"
+        }
+      ],
+      "metrics": [
+        {
+          "format": "percent",
+          "id": "docker_cpu_total_usage",
+          "label": "CPU",
+          "max": 100.0,
+          "min": 0.0,
+          "priority": 1.0,
+          "samples": null,
+          "url": "",
+          "value": 0.0
+        },
+        {
+          "format": "filesize",
+          "id": "docker_memory_usage",
+          "label": "Memory",
+          "max": 1.6475377664E+10,
+          "min": 1.3328384E+07,
+          "priority": 2.0,
+          "samples": null,
+          "url": "",
+          "value": 1.3344768E+07
+        }
+      ],
+      "parents": [
+        {
+          "id": "b9a4db24-8743-4ab9-a811-769cac3b5e73;\u003cdaemonset\u003e",
+          "label": "kube-flannel-ds",
+          "topologyId": "kube-controllers"
+        },
+        {
+          "id": "hp-pavilion;\u003chost\u003e",
+          "label": "hp-pavilion",
+          "topologyId": "hosts"
+        }
+      ],
+      "rank": "kube-flannel/kube-flannel-ds-jbzql",
+      "shape": "heptagon",
+      "tables": [
+        {
+          "columns": null,
+          "id": "kubernetes_labels_",
+          "label": "Kubernetes labels",
+          "rows": [
+            {
+              "entries": {
+                "label": "app",
+                "value": "flannel"
+              },
+              "id": "label_app"
+            },
+            {
+              "entries": {
+                "value": "67cb8b5bcc",
+                "label": "controller-revision-hash"
+              },
+              "id": "label_controller-revision-hash"
+            },
+            {
+              "entries": {
+                "value": "1",
+                "label": "pod-template-generation"
+              },
+              "id": "label_pod-template-generation"
+            },
+            {
+              "entries": {
+                "label": "tier",
+                "value": "node"
+              },
+              "id": "label_tier"
+            }
+          ],
+          "type": "property-list"
+        }
+      ]
+    },
+    "pseudo:unmanaged:worknode1": {
+      "adjacency": [
+        "7911ee5ce1933402fbb3a6d5d16ff627;\u003cpod\u003e",
+        "c0395169-9846-405c-a5a7-c347794de957;\u003cpod\u003e",
+        "pseudo:unmanaged:worknode1"
+      ],
+      "id": "pseudo:unmanaged:worknode1",
+      "label": "Unmanaged",
+      "labelMinor": "worknode1",
+      "pseudo": true,
+      "rank": "unmanaged:worknode1",
+      "shape": "square",
+      "stack": true
+    }
+  }
+}
