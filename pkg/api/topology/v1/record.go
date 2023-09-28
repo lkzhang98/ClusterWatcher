@@ -14,11 +14,20 @@ type ListRecordRequest struct {
 	EndTime   time.Time `form:"end_time" binding:"required" time_format:"2006-01-02T15:04:05Z"`
 }
 
-type ListTopologyGroupResponse struct {
+type ListTopologyNameResponse struct {
 	Topology model.APITopologyGroup `json:"topologyGroup"`
 }
 
-type ListTopologyGroupRequest struct {
+type ListTopologyNameRequest struct {
+	StartTime time.Time `form:"start_time" binding:"required" time_format:"2006-01-02T15:04:05Z"`
+	EndTime   time.Time `form:"end_time" binding:"required" time_format:"2006-01-02T15:04:05Z"`
+}
+
+type ListTopologyNsResponse struct {
+	Topology model.APITopologyGroup `json:"topologyGroup"`
+}
+
+type ListTopologyNsRequest struct {
 	StartTime time.Time `form:"start_time" binding:"required" time_format:"2006-01-02T15:04:05Z"`
 	EndTime   time.Time `form:"end_time" binding:"required" time_format:"2006-01-02T15:04:05Z"`
 }

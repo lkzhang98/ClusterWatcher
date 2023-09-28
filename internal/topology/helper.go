@@ -4,6 +4,7 @@ import (
 	"ClusterWatcher/internal/pkg/db"
 	"ClusterWatcher/internal/pkg/log"
 	"ClusterWatcher/internal/topology/store"
+	"github.com/go-redis/redis"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"os"
@@ -83,6 +84,17 @@ func initStore() error {
 		return err
 	}
 
-	_ = store.NewStore(cli)
+	rdb := redis.NewClient(&redis.Options{
+		Addr:     viper.GetString(prefix+"redis.host") + ":" + viper.GetString(prefix+"redis.port"),
+		Password: "",
+		DB:       viper.GetInt(prefix + "redis.db"),
+	})
+
+	_, err = rdb.Ping().Result()
+	if err != nil {
+		log.Fatalf("redis init failed! %v", err)
+	}
+
+	_ = store.NewStore(cli, rdb)
 	return nil
 }

@@ -26,7 +26,7 @@ func (rl *RecordList) mergeRecordList() model.NodeSummaries {
 		return model.NodeSummaries{}
 	}
 
-	if totalRecords <= 100 {
+	if totalRecords <= 10 {
 		log.Debugf("[store] merge records: %d", totalRecords)
 		result := rl.Records[0]
 		for i := 1; i < totalRecords; i++ {

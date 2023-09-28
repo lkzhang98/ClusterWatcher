@@ -14,7 +14,8 @@ import (
 
 type RecordBiz interface {
 	List(context.Context, string, time.Time, time.Time) (*v1.ListRecordResponse, error)
-	Group(context.Context, time.Time, time.Time) (*v1.ListTopologyGroupResponse, error)
+	GetName(context.Context, time.Time, time.Time) (*v1.ListTopologyNameResponse, error)
+	GetNs(context.Context, time.Time, time.Time) (*v1.ListTopologyNsResponse, error)
 	Layer(context.Context, time.Time, time.Time) (*v1.ListTopologyLayerResponse, error)
 }
 
@@ -46,11 +47,10 @@ func (r *recordBiz) List(ctx context.Context, name string, startTime time.Time, 
 		log.Errorf("[biz] Fail to encode object %v", err)
 		return nil, errno.ErrRecordConnectFail
 	}
-	log.Debugf("get data %+v", resp)
 	return &resp, nil
 }
 
-func (r *recordBiz) Group(ctx context.Context, startTime time.Time, endTime time.Time) (*v1.ListTopologyGroupResponse, error) {
+func (r *recordBiz) GetName(ctx context.Context, startTime time.Time, endTime time.Time) (*v1.ListTopologyNameResponse, error) {
 	record, err := r.ds.Records().List(ctx, "pod", startTime, endTime)
 	if err != nil {
 		if errors.Is(err, qmgo.ErrQueryResultTypeInconsistent) {
@@ -79,7 +79,41 @@ func (r *recordBiz) Group(ctx context.Context, startTime time.Time, endTime time
 		}
 	}
 
-	var resp v1.ListTopologyGroupResponse
+	var resp v1.ListTopologyNameResponse
+	resp.Topology = *topologyGroup
+	log.Debug("[biz] get data from database successfully")
+
+	log.Debugf("get data %+v", resp)
+	return &resp, nil
+}
+
+func (r *recordBiz) GetNs(ctx context.Context, startTime time.Time, endTime time.Time) (*v1.ListTopologyNsResponse, error) {
+	record, err := r.ds.Records().List(ctx, "pod", startTime, endTime)
+	if err != nil {
+		if errors.Is(err, qmgo.ErrQueryResultTypeInconsistent) {
+			return nil, errno.ErrRecordConnectFail
+		}
+	}
+
+	var topologyGroup *model.APITopologyGroup = model.NewAPITopologyGroup()
+	for key, value := range record {
+		for _, meta := range value.Metadata {
+			if meta.ID == "kubernetes_namespace" {
+				group_id := meta.Value
+				if _, ok := topologyGroup.SubTopology[group_id]; ok {
+					topologyGroup.SubTopology[group_id].Nodes[key] = value
+				} else {
+					newSubTopology := model.TopologyGroup{Id: group_id, Nodes: make(model.NodeSummaries)}
+					newSubTopology.Nodes[key] = value
+					topologyGroup.SubTopology[group_id] = newSubTopology
+					topologyGroup.GroupList = append(topologyGroup.GroupList, group_id)
+				}
+				break
+			}
+		}
+	}
+
+	var resp v1.ListTopologyNsResponse
 	resp.Topology = *topologyGroup
 	log.Debug("[biz] get data from database successfully")
 

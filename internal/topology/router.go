@@ -41,20 +41,11 @@ func installRouters(g *gin.Engine) error {
 		recordv1 := v1.Group("/topology")
 		{
 			recordv1.GET("record/:name", rc.List)
-			recordv1.GET("render-by-group", rc.Group)
+			recordv1.GET("render-by-name", rc.GetName)
+			recordv1.GET("render-by-ns", rc.GetNs)
 			recordv1.GET("render-by-layer", rc.Layer)
 		}
 
-		//userv1 := v1.Group("/users")
-		//{
-		//	userv1.POST("", uc.Create)                             // 创建用户
-		//	userv1.PUT(":name/change-password", uc.ChangePassword) // 修改用户密码
-		//	userv1.Use(mw.Authn(), mw.Authz(authz))
-		//	userv1.GET(":name", uc.Get)       // 获取用户详情
-		//	userv1.PUT(":name", uc.Update)    // 更新用户
-		//	userv1.GET("", uc.List)           // 列出用户列表，只有 root 用户才能访问
-		//	userv1.DELETE(":name", uc.Delete) // 删除用户
-		//}
 	}
 	return nil
 }
